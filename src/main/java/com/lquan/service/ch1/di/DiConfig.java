@@ -3,6 +3,11 @@ package com.lquan.service.ch1.di;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 在此处是java配置和事实上注解配置混用
+ * @author lquan
+ *
+ */
 @Configuration
 @ComponentScan("com.lquan.service.ch1.di")
 public class DiConfig {
