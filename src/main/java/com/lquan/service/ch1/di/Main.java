@@ -15,6 +15,11 @@ public class Main {
 		context.close();// 关闭容器
 		**/
 		
+		// 利用java配置来进行
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
+		UseFunctionService service = context.getBean(UseFunctionService.class);
+		System.out.println(service.SayHello("Lquan"));
+		context.close();
 		
 		
 		
